@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Web Development</title>
+
+<!-- Meta Tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<meta name="description" content="First Website">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Sajeel Siddiqui">
+
+<!-- Animation Css-->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!-- Css -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<!-- Js -->
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- JavaScript Work -->
+<script type="text/javascript">
+
+/*
+	window.alert("File is Loading (Please Wait!)");
+	y = window.confirm("Are you Sure ?");
+
+		if (y) {
+			alert("OK");
+		}
+		else {
+			alert("cancel");
+		}
+
+*/
+
+
+	function myFunction() {
+    	var x = document.getElementById("try2");
+    	x.style.fontSize = "25px";           
+    	x.style.color = "red"; 
+} 
+
+		function Multi() {
+		var a = prompt("Enter first number");
+		var b = prompt("Enter second number");
+		var result;
+		var result = a * b;
+
+		document.getElementById('calculator').innerHTML = "The result is:" + result;
+		}
+
+		function add() {
+			var a = prompt("Enter First number");
+			var b = prompt("Enter Second number");
+			var result;
+			var result = parseInt(a) + parseInt(b);
+
+			document.getElementById('calculator').innerHTML = "The result is:" + result;
+		}
+
+		function div() {
+			var a = prompt("Enter First number");
+			var b = prompt("Enter Second number");
+			var result;
+			var result = a / b;
+
+			document.getElementById('calculator').innerHTML = "The result is:" + result;
+		}
+
+		function sub(){
+			var a = prompt("Enter first number");
+			var b = prompt("Enter Second number");
+			var result;
+			var result = a - b;
+
+			document.getElementById('calculator').innerHTML = "The result is:" + result;
+		}
+		
+		function test(){
+			var z = document.getElementById("try4")         
+			z.style.color = "red"; 
+		}
+
+/*
+function myFunction() {
+    x = document.getElementsByClassName("try3");
+    x[0].innerHTML = "Hello World!";
+}
+
+*/
+</script>
+
+
+<!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div id="container">
+
+<header>
+	<img src="img/logo.png">
+	<input type="search" class="right">
+</header>
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="jQueryMobile.html">jQueryMobile                         </a></li>
+		<li><a href="#">Course</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">register</a></li>
+		<li><a href="#">login</a></li>
+	</ul>
+</nav>
+
+<section>
+
+<video controls>
+	<source src="videos/1.mp4" type="video/mp4">
+</video>
+<br>
+<audio controls>
+	<source src="audio/breakbeat.wav" type="audio/wav">
+	<source src="audio/breakbeat.mp3" type="audio/mpeg">
+	<source src="audio/breakbeat.ogg" type="audio/ogg">
+</audio>
+
+<br>
+
+	<figure>
+		<img src="img/twitter-small.png" width="200px" height="200px" alt="Twitter Image">
+		<figcaption>Twitter Image</figcaption>
+	</figure>
+
+</section>
+
+<aside>
+
+<h2 class="rubberBand">JavaScript Wort</h2>
+<hr>
+
+<br>
+
+<button type="button"
+			onclick="document.getElementById('try') .innerHTML ='Hello JavaScript'">
+			Click Here ...</button>
+<p id="try"> Change this text through JavaScript</p>
+
+
+<button type="button" 
+		onclick="myFunction()"> Click Here
+</button>
+<p id="try2"> Change this text through JavaScript</p>
+
+
+<button type="button" 
+		onclick="document.getElementsByClassName('try3')
+		[1].innerHTML = 'Hello World'">For Class Element
+</button>
+<p class="try3">This Paragraph for 1st line.</p>
+<p class="try3">This Paragraph for 2st line.</p>
+
+<br>
+<h3 class="rubberBand">Calculator</h3>
+<button type="button" onclick="Multi()"> Multiply </button>
+<button type="button" onclick="add()"> Add </button>
+<button type="button" onclick="sub()"> Sub </button>
+<button type="button" onclick="div()"> Div </button>
+<p id="calculator"></p>
+
+
+<button type="button" onclick="test()">Test
+</button>
+<p id="try4"> Change this text through JavaScript</p>
+
+</aside>
+
+<div class="clear"></div>
+
+<div id="jquery">
+	<h2>jQuery Work</h2>
+	<hr>
+
+	<p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+    <button id="btn">Hide</button>
+    <button id="btn2">Show</button>
+	
+	<h3>Heading 3</h3>
+	<h3>Heading 4</h3>
+	
+	<button id="btn3">Hide & Show </button>
+	
+</div>
+
+
+	
+
+<div id="animation">
+<h2>3D Keyframe Work</h2>
+<hr>
+
+<div class="box">
+	<p>3D Box </p>
+</div>
+<div class="box2">
+	<p>3D Box </p>
+</div>
+
+</div>
+
+<div class="clear"></div>
+<br>
+
+<div id="animatecss">
+<h2>Annimation Css</h2>
+<hr>
+
+<h1 class="animated bounceInDown">Annimation Cs</h1>
+
+<p class="animated zoomOutLeft">Annimation Cs</p>
+
+</div>
+
+<h2>JavaScript again</h2>
+
+<script type="text/javascript">
+	
+
+ var x = 786;
+
+	document.write("JavaScript is case sensitive");
+
+	document.write("<br> heeeeeeeelo "+ x);
+</script>
+
+<br>
+
+<button type="button"  onclick="box()">Click</button>
+<button type="button"  onclick="box2()"> Confirmation Dialogue box </button>
+
+
+<br>
+
+<input type="button" value="Functions with parameter and argument" onclick="pa('Sajeel','Siddiqui')"> <br>
+<input type="button" value="Functions with parameter and argument (For number)" onclick="pa2(23)">
+
+<br>
+
+<!--Return -->
+
+<script type="text/javascript">
+
+//var g = parseInt(prompt("Enter first number"));
+//var f = parseInt(prompt("Enter second number"));
+
+function addition(ni,n2) {
+
+	var total = n1 +n2;
+
+	return total;
+}
+
+var regg = addition(5,6);
+
+document.write(" your Totol is: "+regg);
+
+</script>
+
+
+<br>
+
+<!--if..else if..else-->
+
+<button type="button" onclick="ifelseif()">if..else if..else</button>
+
+
+<!--switch-->
+
+<button type="button" onclick="switchexemple()">switch</button>
+
+<br>
+
+<!--for Loop-->
+<button type="button" onclick="forloop()">For Loop</button>
+<button type="button" onclick="forloop2()">For Loop 2</button>
+<button type="button" onclick="forloop3()">For Loop 3</button>
+
+<br>
+
+<!--While Loop-->
+<button type="button" onclick="whileloop()">While Loop</button>
+<button type="button" onclick="whileloop2()">While Loop 2</button>
+
+<br>
+
+<!--Do While Loop-->
+<button type="button" onclick="dowhileloop()">do While Loop</button>
+
+<br>
+
+<!-- Array -->
+<button type="button" onclick="array123()"> Array </button>
+
+<button type="button" onclick="array456()"> Array 2 </button>
+<p id="demo10">Array 2</p>
+
+<button type="button" onclick="array789()"> Array 3 </button>
+
+<br>
+
+<!-- Object -->
+
+<button type="button" onclick="object1()"> Object </button>
+<button type="button" onclick="object2()"> Object 2 </button>
+
+<br>
+
+<!-- Method -->
+<button type="button" onclick="method1()"> Method</button>
+<button type="button" onclick="method2()"> Method 2</button>
+
+<br>
+<br>
+<br>
+</div>
+
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- jQuery file -->
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+
+<script>
+	$(document).ready(function(e) {
+
+		$('h2').css('color', 'blue');
+		//alert($('h2').css('color'));
+		//alert($('h2').length);
+
+		$('#btn').click(function(e) {
+			$('p').css('color', '#222');
+			$('#jquery p:first').hide(2000, function() {
+				$('#jquery p').hide(1000);
+			});
+			//$('#jquery p:first').show(2000);
+			//$('#jquery p:first').toggle('slow');
+			//$('#jquery p:first').slideToggle('slow');
+		})
+
+		$('#btn2').click(function(e) {
+			$('#jquery p').css('color', '#fff');
+			$('#jquery p:first').show('slow', function() {
+				$('#jquery p').show(1000);
+				alert ('done');
+			});
+			
+		})
+		
+		
+		$('#btn3').click(function(e) {
+			$('#jquery h3').slideToggle(2000);
+		
+			//$('#jquery p:first').toggle('slow');
+			//$('#jquery p:first').hide('slow');
+		})
+		
+		
+
+		$('#jquery p').click(function(e) {
+			$(this).html("I'm Checked");
+		})
+
+	});
+</script>
+
+
+
+
+</body>
+</html>
